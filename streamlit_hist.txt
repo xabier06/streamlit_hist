@@ -1,0 +1,12 @@
+import streamlit as st
+import matplotlib.pyplot as plt
+import numpy as np
+
+st.markdown(" # Bienvenidos a mi App! :pencil:  ")
+
+arr = np.random.normal(30, 3.5, size=10000)
+fig, ax = plt.subplots()
+ax.hist(arr, bins=20)
+st.pyplot(fig)
+
+st.markdown(" <h1 style='text-align: center; color: red;'> Histograma </h1> ", unsafe_allow_html=True)
